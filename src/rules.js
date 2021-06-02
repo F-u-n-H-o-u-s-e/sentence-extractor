@@ -438,10 +438,10 @@ class AllRule {
 // 		this.window = 0
 // 	}
 
-// 	test(token){
+// 	tests(token){
 // 		this.window = 0
 // 		token = _.isArray(token) ? token : [token]
-// 		return token.map( d => this.rule.test(d)).filter( d => d).length > 0
+// 		return token.map( d => this.rule.tests(d)).filter( d => d).length > 0
 // 	}
 
 // 	then(cb){
@@ -461,7 +461,7 @@ class AllRule {
 
 // 	apply(token){
 // 		token = _.isArray(token) ? token : [token]
-// 		let d = _.find( token, d => this.rule.test(d)) 	
+// 		let d = _.find( token, d => this.rule.tests(d))
 // 		if (d) return this.map(d)
 // 	}
 // }
@@ -474,10 +474,10 @@ class AllRule {
 // 		this.window = 0
 // 	}
 
-// 	test(token){
+// 	tests(token){
 // 		this.window = 0
 // 		token = _.isArray(token) ? token : [token]
-// 		return token.map( d => this.rule.test(d)).filter( d => d).length  == token.length
+// 		return token.map( d => this.rule.tests(d)).filter( d => d).length  == token.length
 // 	}
 
 // 	then(cb){
@@ -497,7 +497,7 @@ class AllRule {
 
 // 	apply(token){
 // 		token = _.isArray(token) ? token : [token]
-// 		if (this.test(token)) return this.map(token)
+// 		if (this.tests(token)) return this.map(token)
 // 	}
 // }
 

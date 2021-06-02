@@ -1,7 +1,13 @@
 //TODO clear source
 
 'use strict';
-
+/**
+ * Функція, що повертає масив токенізовного тексту
+ * @param {String} input - вхідний текст
+ * @param {Object} options - додаткові параметри для роботи з текстом
+ * @param fn - функція, яка приймає  стан
+ * @return {string[]} - масив токенізовного тексту
+ */
 module.exports = (input, options = {}, fn) => {
   if (typeof input !== 'string') throw new TypeError('expected a string');
 

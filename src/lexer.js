@@ -5,6 +5,12 @@ let parse = require("./parser")
 let grammar = require("./grammar")
 let uuid = require('uuid').v4
 
+
+/**
+ * Функція повертає ієрархічну систему, в якій кожний новий елемент тексту генрується в окремим об'єкт з унікальним ID
+ * @param {String} sample - вхідний текст
+ * @return {Promise<*>} - проміс, в якому міститься результат
+ */
 module.exports = sample => {
     
     sample = sample
